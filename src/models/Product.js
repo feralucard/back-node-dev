@@ -10,6 +10,14 @@ const Product = sequelize.define('Product', {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: false
   },
+  image: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  marca: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW
